@@ -1,0 +1,20 @@
+{
+  "name": "video-extractor",
+  "author": "gopeed",
+  "title": "通用视频提取器",
+  "description": "输入任意网站URL，自动抓取页面中的所有视频链接（支持MP4、WebM、M3U8等多种格式）",
+  "version": "1.0.3",
+  "homepage": "https://github.com/ydc2339153919-byte/gopeed-video-extractor",
+  "scripts": [
+    {
+      "event": "onResolve",
+      "match": {
+        "urls": [
+          "https://*/*",
+          "http://*/*"
+        ]
+      },
+      "entry": "index.js"
+    }
+  ]
+}
